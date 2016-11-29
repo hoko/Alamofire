@@ -425,9 +425,3 @@ public struct PropertyListEncoding: ParameterEncoding {
         return urlRequest
     }
 }
-
-// MARK: -
-
-extension NSNumber {
-    fileprivate var isBool: Bool { return CFBooleanGetTypeID() == CFGetTypeID(self) }
-}
